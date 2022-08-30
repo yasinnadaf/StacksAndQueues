@@ -1,9 +1,8 @@
 package com.bridgelabz.stackandqueues.stacks;
 
+import com.bridgelabz.stackandqueues.linkedlist.*;
 
-import java.util.LinkedList;
-
-public class Stack<T> {
+  public class Stack<T> {
 
     LinkedList<T> linkedList;
 
