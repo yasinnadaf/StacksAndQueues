@@ -80,15 +80,6 @@ public class LinkedList<T> {
         return deletedElement;
     }
 
-    public int size(){
-        int count=0;
-        Node<T> temp = head;
-        while(temp != null){
-            temp = temp.next;
-            count++;
-        }
-        return count;
-    }
 
     public T popLast() {
         T deletedElement = tail.data;
