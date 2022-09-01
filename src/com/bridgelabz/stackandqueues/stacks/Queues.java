@@ -16,4 +16,20 @@ public class Queues<T> {
         linkedList.display();
     }
 
+    public boolean isEmpty(){
+        if(linkedList.size() == 0)
+            return true;
+        else
+            return false;
+    }
+
+    public T peek(){
+        return linkedList.peek();
+    }
+
+
+    public T dequeue() {
+        return linkedList.pop();
+    }
+
 }
