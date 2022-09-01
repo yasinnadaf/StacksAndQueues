@@ -80,6 +80,16 @@ public class LinkedList<T> {
         return deletedElement;
     }
 
+    public int size(){
+        int count=0;
+        Node<T> temp = head;
+        while(temp != null){
+            temp = temp.next;
+            count++;
+        }
+        return count;
+    }
+
 
     public T popLast() {
         T deletedElement = tail.data;
@@ -90,5 +100,9 @@ public class LinkedList<T> {
         temp.next = null;
         temp = tail;
         return  deletedElement;
+    }
+
+    public T peek(){
+        return head.data;
     }
 }
